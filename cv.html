@@ -7,20 +7,30 @@
 		{
 			--light-backgorund: #faf7f5;
 			--orange: #e08364;
-			--backgorund: #cab5ad;
+			--background: #cab5ad;
 			--yellow: #f4df84;
 			--text: #402113;
 		}
 
-		* 
-		{
-			margin = 0px;
-			padding = 0px;
-		}
-
 		body
 		{
-			background-color: #cab5ad;
+			margin: 0px;
+			background-color: var(--background);
+			padding: 0px;
+		}
+
+		.headder
+		{
+			margin: 0px;
+			padding-top: 50px;
+			padding-bottom: 50px;
+			color: white;
+		}
+
+		.headder
+		{
+			display: flex;
+			background-color: var(--orange);
 		}
 
 		section
@@ -29,12 +39,40 @@
 			color: var(--text);
 			width: 90%;
 			max-width: 750px;
-	
-		.headder
+			margin: 10px;
+			padding-right: 15px;
+			padding-bottom: 15px;
+			margin: auto;
+		}	
+
+		body section:nth-of-type(2n) h2
 		{
-			display: flex;
-			background-color: var(--orange);
+			background-color: var(--yellow);
+			color: var(--orange);
 		}
+
+		body section:nth-of-type(2n + 1) h2
+		{
+			background-color: var(--orange);
+			color: white;
+		}
+
+		section h2
+		{
+			position: relative;
+			right: 50px;
+
+		}
+
+		section > div
+		{
+			margin-left: 20%;
+		}
+		.inline-list>li
+		{
+			display: inline-block;
+		}
+
 	</style>
 </head>
 <body>
@@ -50,7 +88,7 @@
 			IOC (Institut Obert de Catalunya) an at BCN42.
 			The firs has a traditional aproach while the second has a more disruptive one originated at france. 
 			If you want mor information about them yo can visit they webpages:
-			<ul>
+			<ul class="inline-list" >
 				<li><a href="https://ioc.xtec.cat/doku.php">IOC</a></li>
 				<li><a href="https://42.fr/en/homepage/">42 france</a></li>
 				<li><a href="https://www.42barcelona.com/">42 barcelona</a></li>
@@ -60,23 +98,45 @@
 	
 	<section>
 		<h2>
+			Expirience
 		</h2>
 		<div>
+			As you can see in my Academic information I come from economics so all my professional expirence has been on the administration side.
+			Most of my expirence in computer science comes from personal projects rying to replicate some webpages and other projects with python.
 		</div>
 	</section>
 	
 	
+	<section>
+		<h2>Academic infromation </h2>
+		<div>
+			<h3>Economics degree</h3>
+			<ul>
+				<li> At Universitat Autonoma de Barcelona </li>
+				<li> Average grade 6.3 </li>
+				<li> From september 2011 to january 2016 </li>
+			</ul>
+			<h3>Multiplatform development at IOC</h3>
+			<ul>
+				<li> Institut Obert de Catalunya (IOC)</li>
+				<li> On process from september 2022 </li>
+			</ul>
+			<h3>42 BCN</h3>
+			<ul>
+				<li> At 42 Barcelona</li>
+				<li> On process from september 2022 </li>
+			</ul>
+		</div>
+	</section>
 	<section>
 		<h2>
 		</h2>
 		<div>
 		</div>
 	</section>
-	<section>
-		<h2>
-		</h2>
-		<div>
-		</div>
-	</section>
+	<footer> 
+		<div> 680 388 017 </div>
+		<div> joanrenauvalls@gmail.com </div>
+	</footer>
 </body>
 </html>
