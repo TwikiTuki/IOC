@@ -17,6 +17,29 @@
 			margin: 0px;
 			background-color: var(--background);
 			padding: 0px;
+			padding-bottom: 20px;
+		}
+
+		a
+		{
+			color: var(--orange);
+
+		}
+		a:hover
+		{
+			color: var(--yellow);
+		}
+		img
+		{
+			border-radius: 100%;
+
+		}
+
+		.image, .name
+		{
+			margin: auto;
+			text-align: center;
+
 		}
 
 		.headder
@@ -25,12 +48,16 @@
 			padding-top: 50px;
 			padding-bottom: 50px;
 			color: white;
-		}
-
-		.headder
-		{
+			font-size: 40px;
 			display: flex;
 			background-color: var(--orange);
+		}
+
+		.wrapper
+		{
+			max-width: 750px;
+			width: 100%;
+			margin: auto;
 		}
 
 		section
@@ -39,19 +66,18 @@
 			color: var(--text);
 			width: 90%;
 			max-width: 750px;
-			margin: 10px;
 			padding-right: 15px;
 			padding-bottom: 15px;
 			margin: auto;
 		}	
 
-		body section:nth-of-type(2n) h2
+		body section:nth-of-type(2n + 1) h2
 		{
 			background-color: var(--yellow);
 			color: var(--orange);
 		}
 
-		body section:nth-of-type(2n + 1) h2
+		body section:nth-of-type(2n) h2
 		{
 			background-color: var(--orange);
 			color: white;
@@ -61,24 +87,32 @@
 		{
 			position: relative;
 			right: 50px;
-
+			top: 10px;
+			width: 75%;
+			padding: 5px;
 		}
 
 		section > div
 		{
 			margin-left: 20%;
+			padding-right: 10%;
+			text-align: justify;
 		}
 		.inline-list>li
 		{
 			display: inline-block;
 		}
-
 	</style>
+<!-- https://i.ibb.co/k6D5Lxx/wololooo.jpg -->
 </head>
 <body>
 	<div class="headder">
-		<div> JOAN RENAU VALLS </div>
-		<div> ma image	</div>
+		<div class="wrapper">
+			<div class="image"> 
+				<img src="intra_40.jpg">
+			</div>
+			<div class="name"> JOAN RENAU VALLS </div>
+		</div>
 	</div>
 	
 	<section>
@@ -129,14 +163,17 @@
 		</div>
 	</section>
 	<section>
-		<h2>
-		</h2>
+		<h2> Other information </h2>
 		<div>
+			<ul> <li> Driving license </li> </ul>
+			<h3>Contact</h3>
+			<ul>
+				<li> 680 388 017 </li>
+				<li> joanrenauvalls@gmail.com </li>
+			</ul>
+			
+		
 		</div>
 	</section>
-	<footer> 
-		<div> 680 388 017 </div>
-		<div> joanrenauvalls@gmail.com </div>
-	</footer>
 </body>
 </html>
